@@ -13,7 +13,7 @@ ROW is a native JDBC operation and boot-mybatis is a framework operation.<br/>
 ### Core Framework
 spring-boot：1.5.20.RELEASE<br />mybatis：1.3.0<br />ShardingSphere：5.0.0 alpha<br />Note: different versions have different differences. Serious differences are shown in the configuration file/code. For more information, see the following articles.
 ### Other versions
-See[pom.xml](main/pom.xml)
+See [pom.xml](pom.xml)
 # Theory
 _**The theoretical analysis part involves many personal opinions of the author, which is not an official introduction. If there is any deviation, please correct it.**_
 ## The birth of ShardingSphere
