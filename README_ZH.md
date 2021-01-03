@@ -15,7 +15,8 @@ spring-boot：1.5.20.RELEASE<br />mybatis：1.3.0<br />ShardingSphere：5.0.0 al
 详见[pom.xml](pom.xml)
 ## 补充
 官网链接：https://shardingsphere.apache.org/<br/>
-其他文章可见：https://www.yuque.com/jieker/shardingsphere
+其他文章可见：https://www.yuque.com/jieker/shardingsphere<br/>
+值得注意的是，项目中的每一个模块用到了三种配置方式——（properties、yaml、原生API）。
 # 理论
 _**理论分析部分涉及了很多作者的个人观点，并非官方介绍，若有偏差还望指正。**_
 ## ShardingSphere的诞生
