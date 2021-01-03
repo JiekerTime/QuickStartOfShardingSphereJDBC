@@ -1,0 +1,8 @@
+org\shardingdatabases\ShardingDatabasesApplication.class
+org\shardingdatabases\controller\UserController.class
+org\shardingdatabases\config\DataSourceUtil.class
+org\shardingdatabases\service\impl\UserServiceImpl.class
+org\shardingdatabases\domain\User.class
+org\shardingdatabases\service\UserService.class
+org\shardingdatabases\mapper\UserMapper.class
+org\shardingdatabases\config\ShardingDatabasesConfig.class

@@ -1,6 +1,8 @@
-E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\replica-query-example\src\main\java\org\shardingsphere\ReplicaQueryApplication.java
-E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\replica-query-example\src\main\java\org\shardingsphere\domain\User.java
-E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\replica-query-example\src\main\java\org\shardingsphere\service\UserService.java
-E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\replica-query-example\src\main\java\org\shardingsphere\controller\UserController.java
-E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\replica-query-example\src\main\java\org\shardingsphere\service\impl\UserServiceImpl.java
-E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\replica-query-example\src\main\java\org\shardingsphere\mapper\UserMapper.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\replica-query-example\src\main\java\org\replicaquery\domain\User.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\replica-query-example\src\main\java\org\replicaquery\config\ReplicaQueryConfig.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\replica-query-example\src\main\java\org\replicaquery\service\UserService.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\replica-query-example\src\main\java\org\replicaquery\ReplicaQueryApplication.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\replica-query-example\src\main\java\org\replicaquery\service\impl\UserServiceImpl.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\replica-query-example\src\main\java\org\replicaquery\mapper\UserMapper.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\replica-query-example\src\main\java\org\replicaquery\controller\UserController.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\replica-query-example\src\main\java\org\replicaquery\config\DataSourceUtil.java

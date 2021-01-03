@@ -1,0 +1,8 @@
+org\replicaquery\domain\User.class
+org\replicaquery\config\DataSourceUtil.class
+org\replicaquery\mapper\UserMapper.class
+org\replicaquery\service\impl\UserServiceImpl.class
+org\replicaquery\controller\UserController.class
+org\replicaquery\config\ReplicaQueryConfig.class
+org\replicaquery\ReplicaQueryApplication.class
+org\replicaquery\service\UserService.class
