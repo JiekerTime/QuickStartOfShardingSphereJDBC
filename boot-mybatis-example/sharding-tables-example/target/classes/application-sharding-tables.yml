@@ -1,0 +1,30 @@
+#spring:
+###################### datasource section #######################
+#  shardingsphere:
+#    datasource:
+#      names: ds1
+#      common:
+#        driverClassName: com.mysql.jdbc.Driver
+#        type: com.zaxxer.hikari.HikariDataSource
+#        username: root
+#        password: 123456
+#      ds1:
+#        jdbcUrl: jdbc:mysql://localhost:3306/ds1?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+####################### part of rules configuration #######################
+#    rules:
+#      sharding:
+#        tables:
+#          tab_user:
+#            actual-data-nodes: ds1.tab_user$->{0..2}
+#            table-strategy:
+#              standard:
+#                sharding-column: id
+#                sharding-algorithm-name: table-inline
+#        sharding-algorithms:
+#          table-inline:
+#            type: INLINE
+#            props:
+#              algorithm-expression: tab_user$->{id % 3}
+####################### props section #######################
+#    props:
+#      sql-show: true

@@ -1,0 +1,8 @@
+org\shardingreplicquery\domain\User.class
+org\shardingreplicquery\ShardingReplicaQueryApplication.class
+org\shardingreplicquery\config\DataSourceUtil.class
+org\shardingreplicquery\service\UserService.class
+org\shardingreplicquery\mapper\UserMapper.class
+org\shardingreplicquery\service\impl\UserServiceImpl.class
+org\shardingreplicquery\config\ShardingDatabasesConfig.class
+org\shardingreplicquery\controller\UserController.class

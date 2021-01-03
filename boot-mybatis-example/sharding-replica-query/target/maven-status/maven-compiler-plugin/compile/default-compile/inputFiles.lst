@@ -1,0 +1,8 @@
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-replica-query\src\main\java\org\shardingreplicquery\controller\UserController.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-replica-query\src\main\java\org\shardingreplicquery\service\UserService.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-replica-query\src\main\java\org\shardingreplicquery\config\DataSourceUtil.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-replica-query\src\main\java\org\shardingreplicquery\service\impl\UserServiceImpl.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-replica-query\src\main\java\org\shardingreplicquery\config\ShardingDatabasesConfig.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-replica-query\src\main\java\org\shardingreplicquery\mapper\UserMapper.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-replica-query\src\main\java\org\shardingreplicquery\domain\User.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-replica-query\src\main\java\org\shardingreplicquery\ShardingReplicaQueryApplication.java

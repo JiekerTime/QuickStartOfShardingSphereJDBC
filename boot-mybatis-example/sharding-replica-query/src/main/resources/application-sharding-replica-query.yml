@@ -1,0 +1,63 @@
+#spring:
+###################### datasource section #######################
+#  shardingsphere:
+#    datasource:
+#      names: mds0,mds1,ds0,ds1,ds2,ds3
+#      common:
+#        driverClassName: com.mysql.jdbc.Driver
+#        type: com.zaxxer.hikari.HikariDataSource
+#        username: root
+#        password: 123456
+#      mds0:
+#        jdbcUrl: jdbc:mysql://localhost:3306/mds0?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+#      mds1:
+#        jdbcUrl: jdbc:mysql://localhost:3306/mds1?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+#      ds0:
+#        jdbcUrl: jdbc:mysql://localhost:3306/ds0?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+#      ds1:
+#        jdbcUrl: jdbc:mysql://localhost:3306/ds1?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+#      ds2:
+#        jdbcUrl: jdbc:mysql://localhost:3306/ds2?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+#      ds3:
+#        jdbcUrl: jdbc:mysql://localhost:3306/ds3?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+####################### part of rules configuration #######################
+#    rules:
+#      replica-query:
+#        data-sources:
+#          logds_0:
+#            primary-data-source-name: mds0
+#            replica-data-source-names: ds0,ds1
+#            load-balancer-name: round-robin
+#          logds_1:
+#            primary-data-source-name: mds1
+#            replica-data-source-names: ds2,ds3
+#            load-balancer-name: round-robin
+#        load-balancers:
+#          round-robin:
+#            type: ROUND_ROBIN
+#            props:
+#              work-id: 123
+#      sharding:
+#        tables:
+#          tab_user:
+#            actual-data-nodes: logds_$->{0..1}.tab_user$->{0..2}
+#            database-strategy:
+#              standard:
+#                sharding-column: age
+#                sharding-algorithm-name: database-inline
+#            table-strategy:
+#              standard:
+#                sharding-column: id
+#                sharding-algorithm-name: table-inline
+#        sharding-algorithms:
+#          database-inline:
+#            type: INLINE
+#            props:
+#              algorithm-expression: logds_$->{age % 2}
+#          table-inline:
+#            type: INLINE
+#            props:
+#              algorithm-expression: tab_user$->{id % 3}
+####################### props section #######################
+#    props:
+#      sql-show: true

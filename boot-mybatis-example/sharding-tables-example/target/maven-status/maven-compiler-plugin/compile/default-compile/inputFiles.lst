@@ -1,0 +1,8 @@
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-tables-example\src\main\java\org\shardingtables\controller\UserController.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-tables-example\src\main\java\org\shardingtables\service\impl\UserServiceImpl.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-tables-example\src\main\java\org\shardingtables\domain\User.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-tables-example\src\main\java\org\shardingtables\config\ShardingDatabasesConfig.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-tables-example\src\main\java\org\shardingtables\service\UserService.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-tables-example\src\main\java\org\shardingtables\ShardingTablesApplication.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-tables-example\src\main\java\org\shardingtables\config\DataSourceUtil.java
+E:\ideaproject\shardingsphere-jdbc-examples\boot-mybatis-example\sharding-tables-example\src\main\java\org\shardingtables\mapper\UserMapper.java
