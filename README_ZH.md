@@ -12,7 +12,7 @@
 ### 核心框架
 spring-boot：1.5.20.RELEASE<br />mybatis：1.3.0<br />ShardingSphere：5.0.0 alpha<br />注意：不同版本之间会有不同的差异，比较严重的差异在配置文件/代码中有所展示，其余的差异详见后续文章。
 ### 其他版本
-详见[pom.xml](https://github.com/JiekerTime/QuickStartOfShardingSphereJDBC/blob/main/pom.xml)
+详见[pom.xml](pom.xml)
 # 理论
 _**理论分析部分涉及了很多作者的个人观点，并非官方介绍，若有偏差还望指正。**_
 ## ShardingSphere的诞生

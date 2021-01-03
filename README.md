@@ -14,9 +14,12 @@ ROW is a native JDBC operation and boot-mybatis is a framework operation.<br/>
 spring-boot：1.5.20.RELEASE<br />mybatis：1.3.0<br />ShardingSphere：5.0.0 alpha<br />Note: different versions have different differences. Serious differences are shown in the configuration file/code. For more information, see the following articles.
 ### Other versions
 See [pom.xml](pom.xml)
+<<<<<<< HEAD
 ## Refill
 Official website link:  https://shardingsphere.apache.org/ <br/>
 For more information, see:  https://www.yuque.com/jieker/shardingsphere <br/>
+=======
+>>>>>>> origin/main
 # Theory
 _**The theoretical analysis part involves many personal opinions of the author, which is not an official introduction. If there is any deviation, please correct it.**_
 ## The birth of ShardingSphere
@@ -42,7 +45,7 @@ Introduction to the official website:
 ![](https://cdn.nlark.com/yuque/0/2020/png/485026/1609223219454-92670676-e54f-4932-954f-8d2d2874e485.png#align=left&display=inline&height=840&margin=%5Bobject%20Object%5D&originHeight=840&originWidth=1242&size=0&status=done&style=none&width=1242)
 #### Summary
 With the increase of concurrency, the characteristics of each database become more and more obvious. For example, there is a database that stores running water information. Obviously, the number of queries is far greater than the number of modifications. If these statements are put together, it is impossible to avoid the contention of X lock and S lock, and the speed will naturally decrease and the load will also increase.
-### 数据分片
+### Data sharding
 > Sharding refers to splitting the data in one database and storing them in multiple tables and databases according to some certain standard, so that the performance and availability can be improved. Both methods can effectively avoid the query limitation caused by data exceeding affordable threshold. What’s more, database sharding can also effectively disperse TPS. Table sharding, though cannot ease the database pressure, can provide possibilities to transfer distributed transactions to local transactions, since cross-database upgrades are once involved, distributed transactions can turn pretty tricky sometimes. The use of multiple replica query sharding method can effectively avoid the data concentrating on one node and increase the architecture availability.
 > Splitting data through database sharding and table sharding is an effective method to deal with high TPS and mass amount data system, because it can keep the data amount lower than the threshold and evacuate the traffic. Sharding method can be divided into vertical sharding and horizontal sharding.
 
