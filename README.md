@@ -17,6 +17,7 @@ See [pom.xml](pom.xml)
 ## Refill
 Official website link:  https://shardingsphere.apache.org/ <br/>
 For more information, see:  https://www.yuque.com/jieker/shardingsphere <br/>
+Worth to be mention that each module in the project uses three configuration methods-properties, yaml, and Native API.
 # Theory
 _**The theoretical analysis part involves many personal opinions of the author, which is not an official introduction. If there is any deviation, please correct it.**_
 ## The birth of ShardingSphere
