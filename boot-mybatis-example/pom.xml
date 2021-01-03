@@ -16,7 +16,7 @@
         <module>sharding-databases-tables-example</module>
         <module>sharding-tables-example</module>
         <module>sharding-databases-example</module>
-        <module>sharding-replica-query</module>
+        <module>sharding-replica-query-example</module>
     </modules>
 
     <dependencies>
