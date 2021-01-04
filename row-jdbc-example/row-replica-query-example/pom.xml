@@ -11,4 +11,11 @@
 
     <artifactId>row-replica-query-example</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.shardingsphere.example</groupId>
+            <artifactId>row-jdbc-example</artifactId>
+            <version>${version}</version>
+        </dependency>
+    </dependencies>
 </project>

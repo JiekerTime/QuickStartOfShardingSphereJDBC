@@ -18,9 +18,9 @@ import java.sql.SQLException;
 import java.util.*;
 
 //@Configuration
-@ComponentScan(basePackageClasses = ShardingDatabasesConfig.class)
+@ComponentScan(basePackageClasses = ShardingTablesConfig.class)
 @MapperScan(basePackages = "org.shardingtables.mapper")
-public class ShardingDatabasesConfig {
+public class ShardingTablesConfig {
 
     /**
      * description : Get objects of the SqlSessionFactory

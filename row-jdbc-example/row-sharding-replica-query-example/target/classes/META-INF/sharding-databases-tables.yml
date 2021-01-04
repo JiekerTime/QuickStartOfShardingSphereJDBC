@@ -1,0 +1,36 @@
+dataSources:
+  ds0: !!com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    jdbcUrl: jdbc:mysql://localhost:3306/ds0?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+  ds1: !!com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    jdbcUrl: jdbc:mysql://localhost:3306/ds1?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+
+rules:
+- !SHARDING
+  tables:
+    tab_user:
+      actualDataNodes: ds$->{0..1}.tab_user$->{0..2}
+  defaultTableStrategy:
+    standard:
+      shardingColumn: id
+      shardingAlgorithmName: table-inline
+  defaultDatabaseStrategy:
+    standard:
+      shardingColumn: age
+      shardingAlgorithmName: database-inline
+  shardingAlgorithms:
+    table-inline:
+      type: INLINE
+      props:
+        algorithm-expression: tab_user$->{id % 3}
+    database-inline:
+      type: INLINE
+      props:
+        algorithm-expression: ds$->{age % 2}
+props:
+  sql-show: true
